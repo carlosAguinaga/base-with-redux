@@ -1,17 +1,18 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import {showModal} from '../actions/modal.action.js'
+import { getPokemonInfo } from '../actions/pokemon.action'
+
 
 
 const Button = () => {
 
     const dispatch = useDispatch()
 
-  const handleModal = ()=> {
-    dispatch(showModal())
+  const handleShowPokemon = ()=> {
+    dispatch(getPokemonInfo())
   }
     return (
-        <button onClick={handleModal}>Toggle modal</button>
+        <button onClick={handleShowPokemon}>Pokemon</button>
     )
 }
 

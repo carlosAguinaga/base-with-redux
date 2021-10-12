@@ -9,7 +9,6 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        dispatch(userInfo(data))
     }
 
   return (

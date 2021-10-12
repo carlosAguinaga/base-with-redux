@@ -5,5 +5,8 @@ export const types = {
     hideModal: "HIDE_MODAL",
 
     //user types
-    userInfo: "USER_INFO"
+    userInfo: "USER_INFO",
+
+    //pokemon type
+    pokemonName: "POKEMON_NAME"
 }
