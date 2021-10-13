@@ -5,20 +5,26 @@ import Modal from "./components/Modal";
 import Button from "./components/Button";
 import Form from "./components/Form";
 import GoogleButton from "./components/GoogleButton";
+import {BrowserRouter} from "react-router-dom"
+import AppRouter from './router/AppRouter'
+
 
 
 
 function App() {
 
+  // <div className="App">
+  //       <Form/>
+  //       <GoogleButton/>
+  //       {/* <Button/> */}
+  //       <Modal/>
+  //     </div>
   
   return (
     <Provider store={store}>
-      <div className="App">
-        <Form/>
-        <GoogleButton/>
-        <Button/>
-        <Modal/>
-      </div>
+      <BrowserRouter>
+        <AppRouter/>
+      </BrowserRouter>
     </Provider>
   );
 }
